@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile Cards</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+    <h1 class="main-heading">Meet Our Team</h1>
+    <p class="subtitle">Creative minds. Amazing skills.</p>
+
+    <section class="profile-container">
+
+        <!-- Profile Card 1 -->
+        <div class="card">
+            <img src="https://i.pravatar.cc/150?img=47" alt="Varshita Profile">
+
+            <h2>Varshita</h2>
+            <h3 class="role">Frontend Developer</h3>
+
+            <p class="description">
+                Passionate about creating beautiful and responsive websites.
+            </p>
+
+            <div class="skills">
+                <span>Skills:</span> HTML, CSS, JavaScript
+            </div>
+
+            <button onclick="showProfile('profile1')">View Profile</button>
+
+            <p id="profile1" class="info"></p>
+        </div>
+
+        <!-- Profile Card 2 -->
+        <div class="card">
+            <img src="./img6-1.jpg" alt="Priya Profile">
+
+            <h2>Priya</h2>
+            <h3 class="role">UI/UX Designer</h3>
+
+            <p class="description">
+                Loves designing creative and user-friendly interfaces.
+            </p>
+
+            <div class="skills">
+                <span>Skills:</span> Figma, CSS, Canva
+            </div>
+
+            <button onclick="showProfile('profile2')">View Profile</button>
+
+            <p id="profile2" class="info"></p>
+        </div>
+
+        <!-- Profile Card 3 -->
+        <div class="card">
+            <img src="./img6-2.jpg" alt="Rahul Profile">
+
+            <h2>Rahul</h2>
+            <h3 class="role">Backend Developer</h3>
+
+            <p class="description">
+                Interested in programming and building powerful applications.
+            </p>
+
+            <div class="skills">
+                <span>Skills:</span> Java, Python, SQL
+            </div>
+
+            <button onclick="showProfile('profile3')">View Profile</button>
+
+            <p id="profile3" class="info"></p>
+        </div>
+
+    </section>
+
+    <script src="script6.js"></script>
+</body>
+</html>
