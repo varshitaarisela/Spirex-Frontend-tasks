@@ -1,0 +1,151 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3F0FF;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.6s ease;
+}
+
+/* Main Container */
+.container {
+    background: white;
+    padding: 35px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: #5B3C91;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Color Buttons */
+.color-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.color-btn {
+    border: none;
+    padding: 13px 25px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.red {
+    background-color: #e53935;
+}
+
+.green {
+    background-color: #28a745;
+}
+
+.blue {
+    background-color: #1976d2;
+}
+
+.yellow {
+    background-color: #fbc02d;
+    color: #333;
+}
+
+/* Hover Effects */
+.color-btn:hover,
+.extra-buttons button:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+
+/* Extra Buttons */
+.extra-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.extra-buttons button {
+    border: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    background-color: #764ba2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#resetBtn {
+    background-color: #444;
+}
+
+/* Color Information */
+.color-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f6ff;
+    border-radius: 12px;
+}
+
+.color-info p {
+    color: #777;
+    margin-bottom: 8px;
+}
+
+#colorName {
+    color: #5B3C91;
+    margin-bottom: 8px;
+}
+
+#colorCode {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Footer */
+.footer {
+    margin-top: 25px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .color-btn {
+        padding: 12px 18px;
+    }
+}
