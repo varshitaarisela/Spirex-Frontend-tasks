@@ -1,0 +1,124 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.counter-container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #5b3c91;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Counter Display */
+.counter-display {
+    background: #f3efff;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+#count {
+    font-size: 65px;
+    color: #555;
+    transition: 0.3s;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    border: none;
+    padding: 13px 18px;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+
+#increaseBtn {
+    background: #28a745;
+}
+
+#decreaseBtn {
+    background: #e53935;
+}
+
+#resetBtn {
+    background: #555;
+}
+
+#increaseFiveBtn {
+    background: #1976d2;
+}
+
+/* Message */
+#message {
+    margin-top: 25px;
+    color: #666;
+    font-size: 15px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 25px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .counter-container {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #count {
+        font-size: 50px;
+    }
+
+    button {
+        flex: 1 1 40%;
+    }
+}
