@@ -1,0 +1,157 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Gallery Container */
+.gallery-container {
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #5b3c91;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Image Display */
+.image-box {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #eee;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: opacity 0.4s ease;
+}
+
+.image-box img:hover {
+    transform: scale(1.03);
+}
+
+/* Caption */
+#imageCaption {
+    color: #5b3c91;
+    margin-top: 18px;
+    font-size: 22px;
+}
+
+#imageNumber {
+    color: #777;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* Navigation Buttons */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 22px;
+}
+
+button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #764ba2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5b3584;
+    transform: translateY(-2px);
+}
+
+/* Navigation Dots */
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.dot.active {
+    background: #764ba2;
+    transform: scale(1.2);
+}
+
+/* Play/Pause Button */
+#playPauseBtn {
+    background: #28a745;
+}
+
+#playPauseBtn:hover {
+    background: #1e7e34;
+}
+
+/* Footer */
+.footer {
+    margin-top: 25px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .gallery-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .image-box {
+        height: 230px;
+    }
+
+    .navigation {
+        gap: 8px;
+    }
+
+    button {
+        padding: 11px 14px;
+        font-size: 13px;
+    }
+}
