@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style12.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <h1>🎯 Guess the Number!</h1>
+
+        <p class="subtitle">
+            Guess a number between 1 and 20.
+        </p>
+
+        <div class="game-icon">🎲</div>
+
+        <input
+            type="number"
+            id="guessInput"
+            placeholder="Enter your guess"
+            min="1"
+            max="20"
+        >
+
+        <button id="checkBtn">Check Guess</button>
+
+        <p id="message">Let's start the game!</p>
+
+        <div class="game-info">
+            <p>Attempts Remaining: <span id="attempts">5</span></p>
+            <p>Score: <span id="score">0</span></p>
+        </div>
+
+        <button id="playAgainBtn">Play Again</button>
+
+        
+        
+
+    </div>
+
+    <script src="script12.js"></script>
+
+</body>
+</html>

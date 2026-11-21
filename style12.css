@@ -1,0 +1,147 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #7f93eb, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Game Container */
+.game-container {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #5b3c91;
+    margin-bottom: 12px;
+    font-size: 27px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Game Icon */
+.game-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+#guessInput {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+#guessInput:focus {
+    border-color: #764ba2;
+}
+
+/* Buttons */
+button {
+    border: none;
+    padding: 13px 20px;
+    border-radius: 9px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+#checkBtn {
+    width: 100%;
+    background: #764ba2;
+}
+
+#playAgainBtn {
+    background: #28a745;
+    margin-top: 15px;
+    display: none;
+}
+
+/* Message */
+#message {
+    margin-top: 20px;
+    min-height: 25px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Game Information */
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 25px;
+    padding: 15px;
+    background: #f3efff;
+    border-radius: 10px;
+    color: #5b3c91;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    margin-top: 25px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* Celebration */
+.win {
+    animation: celebrate 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes celebrate {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .game-container {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .game-info {
+        font-size: 12px;
+    }
+}
