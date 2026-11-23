@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style13.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Password Strength Checker</h1>
+        <p class="subtitle">Create a strong and secure password!</p>
+
+        <!-- Password Input -->
+        <div class="input-group">
+            <label for="password">Enter Password</label>
+
+            <div class="password-box">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                >
+                <button type="button" id="togglePassword">
+                    Show
+                </button>
+            </div>
+        </div>
+
+        <!-- Strength Indicator -->
+        <div class="strength-section">
+            <div class="strength-bar">
+                <div id="strengthIndicator"></div>
+            </div>
+
+            <p id="strengthMessage">Password strength: Not entered</p>
+        </div>
+
+        <!-- Password Requirements -->
+        <div class="requirements">
+            <h3>Password Requirements</h3>
+
+            <p id="length">✗ At least 8 characters</p>
+            <p id="uppercase">✗ At least one uppercase letter</p>
+            <p id="lowercase">✗ At least one lowercase letter</p>
+            <p id="number">✗ At least one number</p>
+            <p id="special">✗ At least one special character (@, #, !)</p>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="input-group">
+            <label for="confirmPassword">Confirm Password</label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Re-enter your password"
+            >
+
+            <p id="matchMessage"></p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button type="button" id="resetBtn">Reset</button>
+        </div>
+
+        
+    </div>
+
+    <script src="script13.js"></script>
+</body>
+</html>
